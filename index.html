@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hydration Reminder App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hydration Reminder</h1>
+        <p>Set your daily water intake goal and reminder intervals!</p>
+
+        <div class="inputs">
+            <label for="goal">Daily Goal (ml):</label>
+            <input type="number" id="goal" placeholder="e.g. 2000" required>
+
+            <label for="interval">Reminder Interval (minutes):</label>
+            <input type="number" id="interval" placeholder="e.g. 60" required>
+
+            <button id="start-reminders">Start Reminders</button>
+        </div>
+
+        <div class="progress">
+            <h2>Water Intake Progress</h2>
+            <div id="progress-bar">
+                <div id="progress-fill"></div>
+            </div>
+            <p id="progress-text">0 / 0 ml</p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
